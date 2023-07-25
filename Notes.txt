@@ -1,0 +1,8 @@
+1. Header and Navbar - Required
+2. Banner section (Should be slider) - Required
+3. Featured - Bonus
+5. Deal of the day (Button has modal) - Required
+6. Team section -Required
+7. Why choos us -Bonus
+8. Footer section - Required
+9. Responsive - Bonus
