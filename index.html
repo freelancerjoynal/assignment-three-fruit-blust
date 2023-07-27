@@ -182,14 +182,14 @@
             </div>
         </div>
     </section>
-    <section id="deals" class="py-24">
+    <section id="deals" class="py-8 lg:py-24">
         <div class="container mx-auto px-3 md:px-0">
 
             <!-- Delas data and timer -->
             <div class="grid lg:grid-cols-2 gap-2">
                 <div class="heading">
-                    <h2 class="text-5xl font-bold">Deal of the day</h2>
-                    <p class="text-base py-5">Contrary to popular belief, is not simply random text. It has roots in a
+                    <h2 class="text-2xl text-center lg:text-right lg:text-5xl font-bold">Deal of the day</h2>
+                    <p class="text-base text-center lg:text-left py-5">Contrary to popular belief, is not simply random text. It has roots in a
                         piece
                         of classical Latin
                         literature from 45 BC, making it over 2000 years old.</p>
@@ -197,25 +197,25 @@
                 <div class="timer m-auto lg:ml-auto lg:mr-0 font-bold">
                     <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
+                            <span class="countdown font-mono text-3xl lg:text-5xl">
                                 <span style="--value:15;"></span>
                             </span>
                             days
                         </div>
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
+                            <span class="countdown font-mono text-3xl lg:text-5xl">
                                 <span style="--value:10;"></span>
                             </span>
                             hours
                         </div>
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
+                            <span class="countdown font-mono text-3xl lg:text-5xl">
                                 <span style="--value:24;"></span>
                             </span>
                             min
                         </div>
                         <div class="flex flex-col">
-                            <span class="last countdown font-mono text-5xl">
+                            <span class="last countdown font-mono text-3xl lg:text-5xl">
                                 <span style="--value:52;"></span>
                             </span>
                             sec
@@ -427,10 +427,10 @@
 
     <section id="meet">
         <div class="container mx-auto px-3 md:px-0">
-            <div class="text-center text-white py-24 team-bg rounded">
-                <h2 class="text-5xl	font-semibold">Meet the team section</h2>
+            <div class="text-center text-white py-8 lg:py-24 team-bg rounded">
+                <h2 class="text-2xl lg:text-5xl	font-semibold">Meet the team section</h2>
                 <p class="text-base py-5">Contrary to popular belief, is not simply random text. It has roots in a
-                    piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.
+                    piece of classical  <br class="hidden lg:block"> Latin literature from 45 BC, making it over 2000 years old.
                 </p>
                 <div class="lg:flex justify-center gap-16 pt-10">
                     <div class="item py-5 lg:py-0">
@@ -479,13 +479,13 @@
     </section>
     <section id="whyChoose">
         <div class="container mx-auto px-3 md:px-0">
-            <div class="py-24">
-                <h2 class="text-5xl text-center font-semibold">Why Choose Us</h2>
-                <p class="text-center py-5 text-base">Contrary to popular belief, is not simply random text. It has roots in a piece of classical  <br>
+            <div class="py-8 lg:py-24">
+                <h2 class="text-2xl lg:text-5xl text-center font-semibold">Why Choose Us</h2>
+                <p class="text-center py-5 text-base">Contrary to popular belief, is not simply random text. It has roots in a piece of classical  <br class="hidden lg:block">
                     Latin literature from 45 BC, making it over 2000 years old.
                 </p>
-                <div class="lg:grid lg:grid-cols-3">
-                    <div class="item">
+                <div class="grid grid-cols-1 lg:grid-cols-3">
+                    <div class="order-2 py-3 lg:py-0 lg:order-1 item">
                         <div class="lg:flex text-center lg:text-left pb-5">
                             <div class="icon lg:w-36 lg:pr-5">
                                 <img class="m-auto lg:ml-0 p-6 rounded-full bg-slate-300" src="icons/Group 45.png" alt="icon">
@@ -523,10 +523,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="order-1 lg:order-2 item">
                         <img src="images/whychoose1.png" alt="Fruit image">
                     </div>
-                    <div class="item py-5 lg:py-0">
+                    <div class="order-3 lg:py-0">
                         <div class="lg:flex pb-5">
                             <div class="lg:order-2 icon lg:w-36 lg:pl-5">
                                 <img class="m-auto lg:ml-0 p-6 rounded-full bg-slate-300" src="icons/Group 45.png" alt="icon">
@@ -578,12 +578,14 @@
                 <h2 class="text-2xl font-semibold md:text-white">Fruit Burst</h2>
             </a>
         </div>
-        <div class="grid grid-flow-col gap-4">
-            <a class="link link-hover">About us</a>
-            <a class="link link-hover">Contact</a>
-            <a class="link link-hover">Jobs</a>
-            <a class="link link-hover">Press kit</a>
-        </div>
+        <div class="lg:flex lg:justify-between inline gap-4">
+            <a class="link link-hover px-2">Home</a>
+            <a class="link link-hover px-2">About us</a>
+            <a class="link link-hover px-2">Shop</a>
+            <a class="link link-hover px-2">All fruits</a>
+            <a class="link link-hover px-2">Support</a>
+            <a class="link link-hover px-2">My Account</a>
+        </div>        
         <div>
             <div class="grid grid-flow-col gap-4">
                 <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
