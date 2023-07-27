@@ -224,7 +224,7 @@
             </div>
 
             <!-- Deal of the day cards -->
-            <div class="grid grid-cols-4 gap-5">
+            <div class="grid md:grid-cols-4 gap-5 py-5">
                 <div class="item">
                     <div class="card bg-base-100 shadow-xl p-5">
                         <figure class="px-10 pt-10">
@@ -237,36 +237,31 @@
                             <p>Apples</p>
                             <div class="rating py-4">
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input disabled type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
                             <div class="card-actions">
-                                <button class="btn btn-primary">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card bg-base-100 shadow-xl p-5 w-full">
-                        <figure class="px-10 pt-10">
-                            <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
-                        </figure>
-                        <br><br>
-                        <hr>
-                        <div class="card-body items-center text-center">
-                            <h2 class="card-title">12.90$ - 18.85$</h2>
-                            <p>Apples</p>
-                            <div class="rating py-4">
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            </div>
-                            <div class="card-actions">
-                                <button class="btn btn-primary">Buy Now</button>
+                                <button class="text-orange-500 text-lg" onclick="item1.showModal()">Details</button>
+                                <dialog id="item1" class="modal p-12 text-center">
+                                    <form method="dialog" class="modal-box">
+                                        <img class="w-52 m-auto" src="images/fruit6.png" alt="">
+                                        <h2 class="text-bold text-4xl">Apples</h2>
+                                        <p class="p-8">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                        <div class="rating py-4">
+                                            <input disabled type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input disabled type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <div class="buttons m-auto">
+                                            <button class="btn btn-outline btn-error">Close</button>
+                                            <input  class="btn btn-error bg-orange-500 text-white lg:my-5" type="submit"  value="Buy Now">
+                                        </div>
+                                    </form>
+                                </dialog>
                             </div>
                         </div>
                     </div>
@@ -274,22 +269,40 @@
                 <div class="item">
                     <div class="card bg-base-100 shadow-xl p-5">
                         <figure class="px-10 pt-10">
-                            <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                            <img src="images/fruit7.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <br><br>
                         <hr>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">12.90$ - 18.85$</h2>
-                            <p>Apples</p>
+                            <p>Orange</p>
                             <div class="rating py-4">
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input disabled type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
                             <div class="card-actions">
-                                <button class="btn btn-primary">Buy Now</button>
+                                <button class="text-orange-500 text-lg" onclick="item2.showModal()">Details</button>
+                                <dialog id="item2" class="modal p-12 text-center">
+                                    <form method="dialog" class="modal-box">
+                                        <img class="w-52 m-auto" src="images/pngwing 6.png" alt="">
+                                        <h2 class="text-bold text-4xl">Orange</h2>
+                                        <p class="p-8">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                        <div class="rating py-4">
+                                            <input disabled type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input disabled type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <div class="buttons m-auto">
+                                            <button class="btn btn-outline btn-error">Close</button>
+                                            <input  class="btn btn-error bg-orange-500 text-white lg:my-5" type="submit"  value="Buy Now">
+                                        </div>
+                                    </form>
+                                </dialog>
                             </div>
                         </div>
                     </div>
@@ -297,22 +310,81 @@
                 <div class="item">
                     <div class="card bg-base-100 shadow-xl p-5">
                         <figure class="px-10 pt-10">
-                            <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                            <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <br><br>
                         <hr>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">12.90$ - 18.85$</h2>
-                            <p>Apples</p>
+                            <p>Red Dragon</p>
                             <div class="rating py-4">
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input disabled type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
                             <div class="card-actions">
-                                <button class="btn btn-primary">Buy Now</button>
+                                <button class="text-orange-500 text-lg" onclick="item3.showModal()">Details</button>
+                                <dialog id="item3" class="modal p-12 text-center">
+                                    <form method="dialog" class="modal-box">
+                                        <img class="w-52 m-auto" src="images/fruit8.png" alt="">
+                                        <h2 class="text-bold text-4xl">Red Dragon</h2>
+                                        <p class="p-8">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                        <div class="rating py-4">
+                                            <input disabled type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input disabled type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <div class="buttons m-auto">
+                                            <button class="btn btn-outline btn-error">Close</button>
+                                            <input  class="btn btn-error bg-orange-500 text-white lg:my-5" type="submit"  value="Buy Now">
+                                        </div>
+                                    </form>
+                                </dialog>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card bg-base-100 shadow-xl p-5">
+                        <figure class="px-10 pt-10">
+                            <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <br><br>
+                        <hr>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">12.90$ - 18.85$</h2>
+                            <p>Banana</p>
+                            <div class="rating py-4">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input disabled type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-actions">
+                                <button class="text-orange-500 text-lg" onclick="item4.showModal()">Details</button>
+                                <dialog id="item4" class="modal p-12 text-center">
+                                    <form method="dialog" class="modal-box">
+                                        <img class="w-52 m-auto" src="images/fruit9.png" alt="">
+                                        <h2 class="text-bold text-4xl">Banana</h2>
+                                        <p class="p-8">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                        <div class="rating py-4">
+                                            <input disabled type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input disabled type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <div class="buttons m-auto">
+                                            <button class="btn btn-outline btn-error">Close</button>
+                                            <input  class="btn btn-error bg-orange-500 text-white lg:my-5" type="submit"  value="Buy Now">
+                                        </div>
+                                    </form>
+                                </dialog>
                             </div>
                         </div>
                     </div>
@@ -321,6 +393,12 @@
             <div class="text-center">
                 <button class=" btn btn-error bg-orange-500 text-white lg:my-5">Shop Now</button>
             </div>
+        </div>
+    </section>
+
+    <section id="meet">
+        <div class="container mx-auto px-3 md:px-0">
+
         </div>
     </section>
 
